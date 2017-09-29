@@ -16,11 +16,7 @@
 
 <body>
 
-
-
-
-	
-
+  
 
 
 
@@ -45,34 +41,69 @@
 
 
 
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
 
-<form class="form">
-		
-		<p><strong>Employee Name</strong></p>
-		<input type="text" name="employee-name">
+	<!-- EMPLOYEE NAME, ROLE, START DATE, MONTHS WORKED, MONTHLY RATE, TOTAL BILLED -->
+        <a class="navbar-brand" href="#">Employee Name</a>
+      <a class="navbar-brand" href="#">Role</a>
+      <a class="navbar-brand" href="#">Start Date</a>
+      <a class="navbar-brand" href="#">Months Worked</a>
+      <a class="navbar-brand" href="#">Monthly Rate</a>
+      <a class="navbar-brand" href="#">Total Billed</a>
 
-		<br><br>
+       </div>
+     
+     	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      		<ul class="nav navbar-nav navbar-right">
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-		<p><strong>Role</strong></p>		
-		<input type="text" name="role">
-		
-		<br><br>
 
-		<p><strong>Start Date (DD/MM/YY - ex: 01/01/89)<strong></p>	
-		<input type="text" name="start-date">
+<div class="row">
 
-		<br><br>
+<div class="col-md-4"></div>
 
-		<p><strong>Monthly Rate</strong></p>	
-		<input type="text" name="monthly-rate">
+<div class="col-md-4">
+    <div class="form-area">  
+        <form role="form">
+        <br style="clear:both">
+    				
+    				<div class="form-group">
+    					<p class="text-left"><strong>Employee Name</strong></p>
+						<input type="text" class="form-control" id="name" name="name" placeholder=" " required>
+					</div>
 
-		<br><br>
+					<div class="form-group">
+						<p class="text-left"><strong>Role</strong></p>		
+						<input type="text" class="form-control" id="Role" name="Role" placeholder=" " required>
+					</div>
 
-		<div type="submit" id="submit-btn" class="btn btn-primary" name="submit">Submit</div>
+					<div class="form-group">
+						<p class="text-left"><strong>Start Date (DD/MM/YY - ex: 01/01/89)<strong></p>	
+						<input type="text" class="form-control" id="start-date" name="start-date" placeholder=" " required>
+					</div>
 
-		
-	</form>
+					<div class="form-group">
+						<p class="text-left"><strong>Monthly Rate</strong></p>	
+						<input type="text" class="form-control" id="monthly-rate" name="onthly-rate" placeholder=" " required>
+					</div>
+            
+        <button type="button" id="submit" name="submit" class="btn btn-primary pull-left">Submit</button>
+
+        </form>
+    </div>
+</div>
+
+	<div class="col-md-4"></div>
+
+</div>
 
 
 </body>
 </html>
+
